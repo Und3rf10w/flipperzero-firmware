@@ -17,6 +17,7 @@
 - `input`               - Input service
 - `infrared`            - Infrared application, controls your IR devices
 - `infrared_monitor`    - Infrared debug tool
+- `jukebox`             - Touchtunes Jukebox tool
 - `lfrfid`              - LF RFID application
 - `lfrfid_debug`        - LF RFID debug tool
 - `loader`              - Application loader service
