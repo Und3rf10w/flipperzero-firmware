@@ -44,6 +44,7 @@ extern int32_t vibro_test_app(void* p);
 extern int32_t bt_hid_app(void* p);
 extern int32_t battery_test_app(void* p);
 extern int32_t text_box_test_app(void* p);
+extern int32_t jukebox_app(void *p);
 
 // Plugins
 extern int32_t music_player_app(void* p);
@@ -558,6 +559,14 @@ const FlipperApplication FLIPPER_SETTINGS_APPS[] = {
     {.app = system_settings_app,
      .name = "System",
      .stack_size = 1024,
+     .icon = NULL,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
+#ifdef APP_JUKEBOX
+    {.app = jukebox_app,
+     .name = "JukeBox",
+     .stack_size = 2048,
      .icon = NULL,
      .flags = FlipperApplicationFlagDefault},
 #endif
